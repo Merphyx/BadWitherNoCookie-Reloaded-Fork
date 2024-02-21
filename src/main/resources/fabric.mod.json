@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "bwncr",
+  "version": "${version}",
+  "name": "Bad Wither No Cookie Reloaded",
+  "description": "Silence server level sounds making them local in the process.\nOther sounds can be silenced even further such as sheep\neating grass, cows mooing, you name it.\nIf it makes a sound it can be silenced!",
+  "authors": [
+    "Kreezxil, Eleksploded, Myronx"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded",
+    "issues": "https://gitlab.com/kreezxil/BadWitherNoCookie/-/issues",
+    "sources": "https://gitlab.com/kreezxil/BadWitherNoCookie"
+  },
+  "license": "MIT",
+  "icon": "assets/bwncr/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.kreezcraft.badwithernocookiereloaded.BadWitherNoCookieClient"
+    ],
+    "modmenu": [
+      "com.kreezcraft.badwithernocookiereloaded.compat.BWNCRModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "bwncr.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17",
+    "cloth-config": ">=13"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
