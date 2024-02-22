@@ -43,7 +43,7 @@ public class SoundHandler {
 		}
 
 		// Disable the Thunderous Lightning broadcast sound if it is configed to do so
-		if (event.getName().equals("entity.lightning.thunder") && silenceLightning) {
+		if (event.getName().equals("entity.lightning_bolt.thunder") && silenceLightning) {
 			debugMsg("Silencing thunder");
 			event.setSound(null);
 		}
