@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;
 import net.minecraft.client.sound.SoundInstance;
 
-
 public interface PlaySoundCallback {
 	Event<PlaySoundCallback> EVENT = EventFactory.createArrayBacked(PlaySoundCallback.class,
 			(listeners) -> (event) -> {
